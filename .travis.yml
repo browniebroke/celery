@@ -10,7 +10,7 @@ python:
 os:
     - linux
 stages:
-  - test
+#  - test
   - integration
   - lint
 env:
