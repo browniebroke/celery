@@ -241,7 +241,7 @@ class test_AMQPBackend:
             result.get()
 
         assert excinfo.value.__class__.__name__ == 'RuntimeError'
-        assert str(excinfo.value) == 'aap'
+        assert str(excinfo.value) == "['aap']"
 
     def test_no_expires(self):
         b = self.create_backend(expires=None)
